@@ -14,13 +14,13 @@ public class UsernamePasswordValidationMain {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);// Scanner object creation by Sneha
 		UsernamePasswordValidationUsingLambdaExpression upv = (username,password)->{
-			return (username.equals("shrijit") && password.equals("shrijit1234"));
+			return (username.equals("snehaa") && password.equals("sneha@1234"));
 		};
 		
-		System.out.print("Enter the username : ");
+		System.out.println("Enter the username : ");
 		String username=sc.next();
 		
-		System.out.print("Enter the password : ");
+		System.out.println("Enter the password : ");
 		String password=sc.next();
 		
 		System.out.println("\nAuthentication Status : "+upv.validateusername_password(username, password));
