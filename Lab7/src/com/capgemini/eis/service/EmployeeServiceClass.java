@@ -21,9 +21,7 @@ public class EmployeeServiceClass extends Employee {
 	Employee employee=new Employee();
 	Scanner sc=new Scanner(System.in);
 	
-	/**
-	 * Declaring the class variables
-	 */
+	
 	int eId;
 	String name;
 	double salary;
@@ -33,9 +31,7 @@ public class EmployeeServiceClass extends Employee {
 	public EmployeeServiceClass(){
 		
 	}
-	/**
-	 * method to create an employee by genesis
-	 */
+	
 	public void getEmployeeDetails() {
 		System.out.println("-------------------------------------------");
 		System.out.println("Enter Employee Id:");
@@ -54,9 +50,7 @@ public class EmployeeServiceClass extends Employee {
 		
 	}
 	
-	/**
-	 * adding an employee method 
-	 */
+	
 	public void addEmployee() {
 		employee=new Employee(eId,name,salary,designation);
 		
@@ -66,9 +60,7 @@ public class EmployeeServiceClass extends Employee {
 	private String generateKey(Employee employee) {
 		return String.format("%s-%s", employee.getEmpId(),employee.getEmpName());
 	}
-	/**
-	 * displaying the details method 
-	 */
+	
 	public void showEmployeedetails() {
 		insuranceScheme=employee.insuranceScheme();
 		System.out.println(employee.toString());
